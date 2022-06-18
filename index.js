@@ -38,7 +38,7 @@ app.use(
 app.use(bodyParser.json({limit: "50mb"}));
 app.use(cors())
 
-app.use("/marusia", marusia);
+app.use("/m", marusia);
 
 const port = process.env.PORT || 8080;
 server.listen(port, () => console.log(`Server up and running on port ${port} !`));
